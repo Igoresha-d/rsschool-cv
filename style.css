@@ -1,6 +1,11 @@
 :root {
     --my-color: rgba(173, 127, 0, 0.7);
 }
+body {
+    background-image: url(/img/back.jpg);
+    background-repeat: repeat-y;
+    background-size: cover;
+}
 h1 {
     font-size: 40px;
     text-transform: uppercase;
@@ -15,7 +20,8 @@ h2 {
     top: 40px;
     left: 180px;
     background-color: rgba(23, 21, 21, 0.7);
-    padding: 20px 20px 400px 20px;
+    padding: 20px 20px 40px 20px;
+    margin-bottom: 40px;
 }
 #main-h {
     font-family: Arial, Helvetica, sans-serif;
@@ -23,7 +29,7 @@ h2 {
     top: 40px;
     left: 520px;
     background-color: rgb(229, 229, 229);
-    padding: 40px;
+    padding: 40px 40px 80px 40px;
 }
 #jun {
     text-align: center;
@@ -36,4 +42,22 @@ h2 {
 }
 .color-firm {
     color: var(--my-color);
+}
+.side-block {
+    font-family: Arial, Helvetica, sans-serif;
+    color: antiquewhite;
+}
+a {
+    color: rgb(215, 249, 251);
+    text-decoration: none;
+}
+#second-h {
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 460px;
+    left: 520px;
+    background-color: rgb(255, 255, 255);
+    padding: 40px 40px 80px 40px;
+    border-top: 5px;
+    border-color: antiquewhite;
 }
