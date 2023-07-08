@@ -1,6 +1,13 @@
 :root {
     --my-color: rgba(173, 127, 0, 0.7);
 }
+nav {
+    width: 1400px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--my-color);
+}
 body {
     height: 100%;
     width: 100%;
@@ -12,6 +19,7 @@ body {
 footer {
     display: flex;
     flex-direction: row;
+    width: 1400px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 800;
     text-transform: uppercase;
@@ -104,7 +112,7 @@ a {
     width: 30vw;
     margin: 2%;
 }
-nav {
+.low-block-second {
     text-align: start;
     width: 30vw;
     margin: 2%;

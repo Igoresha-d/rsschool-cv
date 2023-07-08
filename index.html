@@ -7,13 +7,23 @@
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
+    <nav id="table-of-contents">
+        <ul style="display: flex; justify-content: space-around;">
+          <li><a href="#ch1">Short description</a></li>
+          <li><a href="#ch2">Contacts and Personal</a></li>
+          <li><a href="#ch3">Skills</a></li>
+          <li><a href="#ch4">Code examples</a></li>
+          <li><a href="#ch5">Education info</a></li>
+          <li><a href="#ch6">Languages</a></li>
+        </ul>
+      </nav>
     <main>
         <div class="main-block">
             <img src="img/CV-pic.PNG" alt="Profile picture" width="300" height="400">
             <br>
             <div class="jun">Junior Frontend Developer</div>
             <div class="side-block">
-                <h2>Contacts:</h2>
+                <h2 id="ch2">Contacts:</h2>
                 <table class="table-side">
                     <tr><td><b>- Email:</b></td><td> idadyukov@yandex.ru</td></tr>
                     <tr><td><b>- Phone:</b></td><td> +381 063 769 8104</td></tr>
@@ -25,7 +35,7 @@
                     <tr><td><b>- Date of birth:</b></td><td> 11.05.1995</td></tr>
                     <tr><td><b>- City:</b></td><td> Novi Sad, Serbia</td></tr>
                 </table>
-                <h2> Languages:</h2>
+                <h2 id="ch6"> Languages:</h2>
                 <table class="table-side">
                     <tr><td><b>- Russian</b></td><td> Native</td></tr>
                     <tr><td><b>- English</b></td><td> B2</td></tr>
@@ -38,7 +48,7 @@
                 <div> 
                     <h1><b>Igor <span class="color-firm"> D</span></b>adiukov </h1>
                     <h2>Junior Frontend Developer</h2>
-                    <h3>Short description:</h3>
+                    <h3 id="ch1">Short description:</h3>
                     <div>
                         Igor, 28 years old. Originally from Russia, St. Petersburg, but now I live in Serbia. <br>
                         I am looking for a job as Junior Frontend Developer. <br>
@@ -50,7 +60,7 @@
                 </div>
             </header>
             <div class="body-of-block">
-                <h2>Skills:</h2>
+                <h2 id="ch3">Skills:</h2>
                 <ul>
                     <li>JavaScript <i>(basic)</i></li>
                     <li>Python <i>(basic)</i></li>
@@ -58,7 +68,7 @@
                     <li>Git, GitHub <i>(basic)</i></li>
                     <li>VSCodium</li>
                 </ul>
-                <h2>Code examples:</h2>
+                <h2 id="ch4">Code examples:</h2>
                 <h3>JavaScript:</h3>
                 <div class="code-ex">
                 <pre>
@@ -137,7 +147,7 @@
                     </code>
                 </pre>
                 </div>
-                <h2>Courses & Education:</h2>
+                <h2 id="ch5">Courses & Education:</h2>
                 <ul>
                     <li>Python developing (Stepik.org Honors certificate)</li>
                     <li>HTML&CSS Base courses</li>
@@ -151,11 +161,11 @@
             <span> Made for RS School,</span> <br>
             <span> July 2023.</span>
         </div>
-        <img src="/img/logo.jpg" alt="school logo" width="150" height="50">
-        <nav>
+        <img src="https://rs.school/images/rs_school_js.svg" alt="school logo" width="150" height="50" style="margin: 2%;">
+        <div class="low-block-second">
             <a href="https://rs.school/js/" style="color: rgb(174, 0, 0);"> Link for course</a><br>
             <a href="https://github.com/Igoresha-d/rsschool-cv" style="color: rgb(174, 0, 0);"> Igoresha-d (GitHub),</a> <br>
-        </nav>
+        </div class="low-block-second">
     </footer>
   </body>
 </html>
