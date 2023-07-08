@@ -1,67 +1,161 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Igor Dadiukov CV</title>
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-    <div id="main-h"> 
-        <h1><b>Igor <span class="color-firm"> D</span></b>adiukov </h1>
-        <h2>Junior Frontend Developer</h2>
-        <h3>Short description:</h3>
-        <div>
-            Igor, 28 years old. Originally from Russia, St. Petersburg, but now I live in Serbia. <br>
-            I am looking for a job as Junior Frontend Developer. <br>
-            I have a master's degree in building design. Graduation department - steel and wooden structures.<br>
-            For now I want to learn web development and change my profession.<br>
-            I'm easy learn for something new in technologies and engineering and I have interest in IT technologies <br>
-            and also in UX/UI design. You can read about my skills below.
+    <main>
+        <div class="main-block">
+            <img src="img/CV-pic.PNG" alt="Profile picture" width="300" height="400">
+            <br>
+            <div class="jun">Junior Frontend Developer</div>
+            <div class="side-block">
+                <h2>Contacts:</h2>
+                <table class="table-side">
+                    <tr><td><b>- Email:</b></td><td> idadyukov@yandex.ru</td></tr>
+                    <tr><td><b>- Phone:</b></td><td> +381 063 769 8104</td></tr>
+                    <tr><td><b>- Telegram:</b></td><td> @igoresha_d</td></tr>
+                    <tr><td><b>- LinkedIn:</b></td><td> <a href="https://www.linkedin.com/in/igor-dadiukov-980306234/">Igor Dadiukov</a></td></tr>
+                </table>
+                <h2>Personal:</h2>
+                <table class="table-side">
+                    <tr><td><b>- Date of birth:</b></td><td> 11.05.1995</td></tr>
+                    <tr><td><b>- City:</b></td><td> Novi Sad, Serbia</td></tr>
+                </table>
+                <h2> Languages:</h2>
+                <table class="table-side">
+                    <tr><td><b>- Russian</b></td><td> Native</td></tr>
+                    <tr><td><b>- English</b></td><td> B2</td></tr>
+                    <tr><td><b>- Serbian</b></td><td> A2</td></tr>
+                </table>
+            </div>
         </div>
-    </div>
-    <div id="main-block">
-        <img src="img/CV-pic.PNG" alt="Profile picture" width="300" height="400">
-        <br>
-        <div id="jun">Junior Frontend Developer</div>
-        <div class="side-block">
-            <h2>Contacts:</h2>
-            <ul>
-                <li><b>Email:</b> idadyukov@yandex.ru</li>
-                <li><b>Phone:</b> +381 063 769 8104</li>
-                <li><b>Telegram:</b> @igoresha_d</li>
-                <li><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/igor-dadiukov-980306234/">Igor Dadiukov</a></li>
-            </ul>
-            <h2>Personal:</h2>
-            <ul>
-                <li><b>Date of birth:</b> 11.05.1995</li>
-                <li><b>City:</b> Novi Sad, Serbia</li>
-            </ul>
-            <h2> Languages:</h2>
-            <ul>
-                <li>Russian - Native</li>
-                <li>English - B2</li>
-                <li>Serbian - A2</li>
-            </ul>
+        <div class="second-block">
+            <header>
+                <div> 
+                    <h1><b>Igor <span class="color-firm"> D</span></b>adiukov </h1>
+                    <h2>Junior Frontend Developer</h2>
+                    <h3>Short description:</h3>
+                    <div>
+                        Igor, 28 years old. Originally from Russia, St. Petersburg, but now I live in Serbia. <br>
+                        I am looking for a job as Junior Frontend Developer. <br>
+                        I have a master's degree in building design. Graduation department - steel and wooden structures.<br>
+                        For now I want to learn web development and change my profession.<br>
+                        I'm easy learn for something new in technologies and engineering and I have interest in IT technologies <br>
+                        and also in UX/UI design. You can read about my skills below.
+                    </div>
+                </div>
+            </header>
+            <div class="body-of-block">
+                <h2>Skills:</h2>
+                <ul>
+                    <li>JavaScript <i>(basic)</i></li>
+                    <li>Python <i>(basic)</i></li>
+                    <li>HTML5, CSS <i>(basic)</i></li>
+                    <li>Git, GitHub <i>(basic)</i></li>
+                    <li>VSCodium</li>
+                </ul>
+                <h2>Code examples:</h2>
+                <h3>JavaScript:</h3>
+                <div class="code-ex">
+                <pre>
+                    <code>
+                        function testWhile(a) {
+                            var x=0;
+                            var i=1;
+                            while (i &lt; a) {
+                                if (i%2 == 0) {
+                                    x=x+i;
+                                    i=i+1
+                                } else {
+                                    i=i+1;
+                                }
+                            }
+                            return x;
+                        }
+                    </code>
+                </pre>
+                </div>
+                <h3>Python:</h3>
+                <div class="code-ex">
+                <pre>
+                    <code>
+                        import sys
+                        import pygame
+                        from pygame.locals import *
+                        pygame.init()
+                        surface = pygame.display.set_mode((640, 480))
+                        clock = pygame.time.Clock()
+                        surfrect = surface.get_rect()
+                        cat=pygame.image.load("cat.jpg")
+                        rect = cat.get_rect()
+                        rect.center = (surfrect.w / 2, surfrect.h / 2)
+                        touched = False
+
+                        width = surface.get_width()
+                        height = surface.get_height()
+                        sp0=8
+                        sp1=8
+                        speed=[sp0,sp1]
+                        while True:
+                            for ev in pygame.event.get():
+                                if ev.type == QUIT:
+                                    pygame.quit()
+                                elif ev.type == pygame.MOUSEBUTTONDOWN:
+                            if rect.collidepoint(ev.pos):
+                                touched = True
+                                # This is the starting point
+                                pygame.mouse.get_rel()
+                            elif ev.type == pygame.MOUSEBUTTONUP:
+                                touched = False
+                                clock.tick(60)
+                                surface.fill((0, 0, 0))
+                                rect = rect.move(speed)
+                            if rect.left &lt; 0 or rect.right > width:
+                                speed[0] = -speed[0]
+                                sp0=speed[0]
+                                surface.fill((255,41,41))
+                            if rect.top &lt; 0 or rect.bottom > height:
+                                speed[1] = -speed[1]
+                                sp1=speed[1]
+                                surface.fill((56,197,240))
+                            if touched:
+                                rect.move_ip(pygame.mouse.get_rel())
+                                rect.clamp_ip(surfrect)
+                                speed[0]=0
+                                speed[1]=0
+                                cat=pygame.image.load("cat2.jpg")
+                            if not touched:
+                                speed[0]= sp0
+                                speed[1]= sp1
+                                cat=pygame.image.load("cat.jpg")
+                            surface.blit(cat,rect)
+                            pygame.display.flip()
+                    </code>
+                </pre>
+                </div>
+                <h2>Courses & Education:</h2>
+                <ul>
+                    <li>Python developing (Stepik.org Honors certificate)</li>
+                    <li>HTML&CSS Base courses</li>
+                    <li>RS School (Junior Frontend Developer)</li>
+                </ul>
+            </div>
         </div>
-    </div>
-    <div id="second-h">
-        <h2>Skills:</h2>
-        <ul>
-            <li>JavaScript <i>(basic)</i></li>
-            <li>Python <i>(basic)</i></li>
-            <li>HTML5, CSS <i>(basic)</i></li>
-            <li>Git, GitHub <i>(basic)</i></li>
-            <li>VSCodium</li>
-        </ul>
-        <h2>Code examples:</h2>
-        <h3>JavaScript:</h3>
-        <h3>Python:</h3>
-        <h2>Courses & Education:</h2>
-        <ul>
-            <li>Python developing (Stepik.org Honors certificate)</li>
-            <li>HTML&CSS Base courses</li>
-            <li>RS School (Junior Frontend Developer)</li>
-        </ul>
-    </div>
+    </main>
+    <footer>
+        <div class="low-block">
+            <span> Made for RS School,</span> <br>
+            <span> July 2023.</span>
+        </div>
+        <img src="/img/logo.jpg" alt="school logo" width="150" height="50">
+        <nav>
+            <a href="https://rs.school/js/" style="color: rgb(174, 0, 0);"> Link for course</a><br>
+            <a href="https://github.com/Igoresha-d/rsschool-cv" style="color: rgb(174, 0, 0);"> Igoresha-d (GitHub),</a> <br>
+        </nav>
+    </footer>
   </body>
 </html>

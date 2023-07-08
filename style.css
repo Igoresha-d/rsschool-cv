@@ -2,43 +2,67 @@
     --my-color: rgba(173, 127, 0, 0.7);
 }
 body {
-    background-image: url(/img/back.jpg);
-    background-repeat: repeat-y;
-    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer {
+    display: flex;
+    flex-direction: row;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+header {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 90%;
+    height: 420px;
+    background-color: rgb(229, 229, 229);
+    padding-left: 5%;
+}
+main {
+    height: 100%;
+    width: 1400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 h1 {
-    font-size: 40px;
+    font-size: 400%;
     text-transform: uppercase;
     text-align: center;
     font-weight: 400;
 }
 h2 {
-    font-size: 25px;
+    font-size: 180%;
 }
-#main-block {
-    position: absolute;
-    top: 40px;
-    left: 180px;
+.main-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30vw;
     background-color: rgba(23, 21, 21, 0.7);
-    padding: 20px 20px 40px 20px;
-    margin-bottom: 40px;
+    padding-top: 2%;
 }
-#main-h {
-    font-family: Arial, Helvetica, sans-serif;
-    position: absolute;
-    top: 40px;
-    left: 520px;
-    background-color: rgb(229, 229, 229);
-    padding: 40px 40px 80px 40px;
-}
-#jun {
-    text-align: center;
-    font: bold 17px Arial;
+.jun {
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    font: bold 100% Arial;
     background-color: var(--my-color);
-    position: relative;
-    top: -40px;
-    margin: 0px 30px;
-    padding: 20px 0px;
+    width: 55%;
+    padding: 5% 0;
+}
+.second-block {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    background-color: antiquewhite;
 }
 .color-firm {
     color: var(--my-color);
@@ -46,18 +70,42 @@ h2 {
 .side-block {
     font-family: Arial, Helvetica, sans-serif;
     color: antiquewhite;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
 }
 a {
     color: rgb(215, 249, 251);
     text-decoration: none;
 }
-#second-h {
+.body-of-block {
     font-family: Arial, Helvetica, sans-serif;
-    position: absolute;
-    top: 460px;
-    left: 520px;
     background-color: rgb(255, 255, 255);
-    padding: 40px 40px 80px 40px;
-    border-top: 5px;
-    border-color: antiquewhite;
+    padding-left: 5%;
+    width: 90%;
+}
+.code-ex {
+    font-size: 100%;
+    background-color: rgb(215, 249, 251);
+    width: 100%;
+}
+.table-side {
+    width: 100%;
+    font-size: 90%;
+    padding: 10px 0px;
+    border-bottom: 2px solid var(--my-color);
+    border-top: 2px solid var(--my-color);
+}
+.table-side td:nth-child(1) {
+    width: 40%;
+}
+.low-block {
+    text-align: end;
+    width: 30vw;
+    margin: 2%;
+}
+nav {
+    text-align: start;
+    width: 30vw;
+    margin: 2%;
 }
